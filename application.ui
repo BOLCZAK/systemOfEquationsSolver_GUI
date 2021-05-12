@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBoxMacierz">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>400</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>MACIERZ WSPÓŁCZYNNIKÓW</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="labelWczytanaMacierz">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>360</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MATRIX PLACEHOLDER</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxStopChoice">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Warunek Zatrzymania</string>
+    </property>
+    <widget class="QRadioButton" name="radioButtonIteration">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Iteracje</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButtonTolerance">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>53</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tolerancja</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxWartoscStopu">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>100</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Wartości Stopu</string>
+    </property>
+    <widget class="QLabel" name="labelStop">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>100</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ilość Iteracji:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditStop">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Iteracje</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxRozwiazania">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>120</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>MACIERZ ROZWIĄZAŃ</string>
+    </property>
+    <widget class="QLabel" name="labelWczytaneWyniki">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>80</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>RESULT MATRIX</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonWczytajPliki">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>190</y>
+      <width>120</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wczytaj z pliku</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOblicz">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>260</y>
+      <width>120</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Oblicz</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxInformacja">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>670</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>INFORMACJA</string>
+    </property>
+    <widget class="QLabel" name="labelInformacje">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>18</y>
+       <width>630</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>INFO PLACEHOLDER</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxWynikNasza">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>670</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>OTRZYMANY WYNIK</string>
+    </property>
+    <widget class="QLabel" name="labelNaszWynik">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>24</y>
+       <width>630</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OUR RESULT PLACEHOLDER</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxWynikWbudowana">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>450</y>
+      <width>670</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>WYNIK Z WBUDOWANEJ FUNCKJI</string>
+    </property>
+    <widget class="QLabel" name="labelWbudowanyWynik">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>24</y>
+       <width>630</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BIULT-IN FUNCTION RESULT PLACEHOLDER</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxLiczbaIteracji">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>325</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>LICZBA ITERACJ</string>
+    </property>
+    <widget class="QLineEdit" name="lineEditLiczbaIteracji">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>300</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Liczba Iteracji</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxWartoscTolerancji">
+    <property name="geometry">
+     <rect>
+      <x>355</x>
+      <y>520</y>
+      <width>325</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>WARTOSC TOLERANCJI</string>
+    </property>
+    <widget class="QLineEdit" name="lineEditWartoscTolerancji">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>300</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Wartość Tolerancji</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
